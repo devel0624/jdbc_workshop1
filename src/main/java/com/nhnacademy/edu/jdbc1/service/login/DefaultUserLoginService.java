@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 public class DefaultUserLoginService implements UserLoginService{
     UserRepository userRepository;
 
-    public DefaultUserLoginService(){
+    public DefaultUserLoginService(UserRepository userRepository) {
+        this.userRepository = userRepository;
     }
 }

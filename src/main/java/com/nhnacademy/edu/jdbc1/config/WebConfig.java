@@ -17,7 +17,7 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @EnableWebMvc
-//@Configuration
+@Configuration
 @ComponentScan(basePackageClasses = ControllerBase.class)
 public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, MessageSourceAware {
 

@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.jdbc1.repository;
+package com.nhnacademy.edu.jdbc1.service.course;
 
 import com.nhnacademy.edu.jdbc1.service.course.CourseRepository;
 import org.springframework.stereotype.Component;

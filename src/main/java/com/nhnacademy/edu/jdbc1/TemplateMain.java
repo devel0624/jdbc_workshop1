@@ -9,8 +9,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.sql.Date;
 
-public class Main {
-    private static final Log log = LogFactory.getLog(Main.class);
+public class TemplateMain {
+    private static final Log log = LogFactory.getLog(TemplateMain.class);
 
     public static void main(String[] args) {
         try (AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(RootConfig.class)) {

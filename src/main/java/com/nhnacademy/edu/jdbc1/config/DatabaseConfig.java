@@ -9,10 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
-@Configuration
-@EnableTransactionManagement
 public class DatabaseConfig {
-    @Bean
     public DataSource dataSource() {
         BasicDataSource basicDataSource = new BasicDataSource();
         basicDataSource.setUrl("jdbc:mysql://133.186.151.141:3306/nhn_academy_32");
@@ -24,7 +21,6 @@ public class DatabaseConfig {
         return basicDataSource;
     }
 
-    @Bean
     public PlatformTransactionManager transactionManager() {
         return new DataSourceTransactionManager(dataSource());
     }
