@@ -1,7 +1,7 @@
 package com.nhnacademy.edu.jdbc1.config;
 
 import com.nhnacademy.edu.jdbc1.Base;
-import com.nhnacademy.edu.jdbc1.service.login.JdbcUserRepository;
+import com.nhnacademy.edu.jdbc1.service.login.DefaultUserRepository;
 import com.nhnacademy.edu.jdbc1.service.login.UserRepository;
 import com.nhnacademy.edu.jdbc1.service.student.DefaultStudentRepository;
 import com.nhnacademy.edu.jdbc1.service.student.StudentRepository;
@@ -34,7 +34,7 @@ public class RootConfig {
 
     @Bean
     public UserRepository userRepository(){
-        return new JdbcUserRepository();
+        return new DefaultUserRepository();
     }
 
 
