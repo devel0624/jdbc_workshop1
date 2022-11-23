@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Course Number</th>
+    <th>Subject Title</th>
+    <th>Teacher</th>
+    <th>REGISTER TIME</th>
+  </tr>
+  <tr th:each="course: ${courses}">
+    <td th:text="${course.id}"></td>
+    <td th:text="${course.subject.name}"></td>
+    <td th:text="${course.teacher.name}"></td>
+    <td th:text="${course.createdAt}"></td>
+  </tr>
+</table>
+
+
+</body>
+</html>

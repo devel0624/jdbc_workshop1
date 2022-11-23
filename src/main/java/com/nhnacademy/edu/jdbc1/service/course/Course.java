@@ -31,4 +31,5 @@ public class Course {
                 ", createdAt=" + createdAt +
                 '}';
     }
+
 }
