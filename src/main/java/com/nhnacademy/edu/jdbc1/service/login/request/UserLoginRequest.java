@@ -1,4 +1,4 @@
-package com.nhnacademy.edu.jdbc1.service.login;
+package com.nhnacademy.edu.jdbc1.service.login.request;
 
 
 import lombok.Getter;

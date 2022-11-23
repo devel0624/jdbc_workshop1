@@ -1,6 +1,8 @@
 package com.nhnacademy.edu.jdbc1.service.course;
 
 
+import com.nhnacademy.edu.jdbc1.service.subject.Subject;
+
 import java.sql.Connection;
 import java.util.List;
 
@@ -18,5 +20,6 @@ public interface CourseRepository {
     Course findById(Connection connection,long id);
     int insert(Connection connection, Course course);
     int deleteById(Connection connection, long id);
-    int updateById(Connection connection, long id, String name);
+
+    int updateSubjectById(Connection connection, long id, Subject subject);
 }

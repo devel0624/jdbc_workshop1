@@ -134,12 +134,12 @@ public class DefaultCourseRepository implements CourseRepository {
     }
 
     @Override
-    public int updateById(Connection connection, long id, String name) {
-        String sql = "UPDATE JdbcCourses SET name = ? WHERE id = ? ";
+    public int updateSubjectById(Connection connection, long id, Subject subject) {
+        String sql = "UPDATE JdbcCourses SET subject_id = ? WHERE id = ? ";
 
         try (PreparedStatement statement = connection.prepareStatement(sql);) {
 
-            statement.setString(1, name);
+            statement.setLong(1, subject.getId());
             statement.setLong(2, id);
 
             return statement.executeUpdate();

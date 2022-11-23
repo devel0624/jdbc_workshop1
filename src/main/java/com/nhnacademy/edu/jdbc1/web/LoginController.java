@@ -1,19 +1,16 @@
 package com.nhnacademy.edu.jdbc1.web;
 
-import com.nhnacademy.edu.jdbc1.exception.UserNotFound;
 import com.nhnacademy.edu.jdbc1.exception.ValidationFailedException;
 import com.nhnacademy.edu.jdbc1.service.login.User;
-import com.nhnacademy.edu.jdbc1.service.login.UserLoginRequest;
+import com.nhnacademy.edu.jdbc1.service.login.request.UserLoginRequest;
 import com.nhnacademy.edu.jdbc1.service.login.UserLoginService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.validation.Valid;
-import java.util.Objects;
 
 @Slf4j
 @Controller

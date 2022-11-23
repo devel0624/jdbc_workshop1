@@ -44,8 +44,8 @@ public class RootConfig {
     }
 
     @Bean
-    public CourseCreationService courseCreationService() throws SQLException {
-        return new DefaultCourseCreationService(courseRepository(),connection());
+    public CourseCreationService courseCreationService() {
+        return new DefaultCourseCreationService(courseRepository(),dataSource());
     }
 
     @Bean

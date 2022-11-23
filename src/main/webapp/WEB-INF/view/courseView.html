@@ -12,15 +12,17 @@
     <th>Subject Title</th>
     <th>Teacher</th>
     <th>REGISTER TIME</th>
+    <th>DELETE</th>
   </tr>
   <tr th:each="course: ${courses}">
     <td th:text="${course.id}"></td>
     <td th:text="${course.subject.name}"></td>
     <td th:text="${course.teacher.name}"></td>
     <td th:text="${course.createdAt}"></td>
+    <td> <a th:href="@{/course/delete/{courseId}(courseId = ${course.id})}"> <span> 삭제</span> </a>  </td>
   </tr>
 </table>
-
+<a href="/course"><span>메뉴로</span></a>
 
 </body>
 </html>

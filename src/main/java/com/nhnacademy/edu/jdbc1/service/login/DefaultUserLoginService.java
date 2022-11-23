@@ -2,6 +2,7 @@ package com.nhnacademy.edu.jdbc1.service.login;
 
 import com.nhnacademy.edu.jdbc1.exception.InvalidPassword;
 import com.nhnacademy.edu.jdbc1.exception.UserNotFound;
+import com.nhnacademy.edu.jdbc1.service.login.request.UserLoginRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
